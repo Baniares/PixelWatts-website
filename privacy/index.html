@@ -26,24 +26,28 @@
     <h1>Privacy.</h1>
     <p class="notice">Updated November 6, 2026. This policy describes the current PixelWatts implementation.</p>
     <div id="policy-content">
-      <p>PixelWatts is a native indoor cycling app. It has no PixelWatts account or app-operated backend. Your recorded rides are stored on your device. Optional integrations and sharing can send information to destinations you choose.</p>
-      <h2>Data on your device</h2>
-      <p>PixelWatts stores ride times, power, cadence, heart rate, distance, laps, workout plans, and destination status in local files and a SQLite database. Preferences include units, appearance, training settings such as FTP and weight, and selected sensor identities. API credentials and pairing secrets use the iOS Keychain.</p>
-      <p>An unfinished ride may have a local recovery journal. Completed rides can be included in device backups depending on your Apple settings; the recovery journal and diagnostic archive are excluded. PixelWatts does not operate a cloud backup service.</p>
-      <h2>Connections and permissions</h2>
-      <p>Bluetooth connects cycling equipment and signals paired iPhones. Optional Apple Watch support exchanges heart rate and ride cues using WatchConnectivity and a temporary HealthKit workout session. Apple Health access lets you read and save indoor cycling workouts and associated measurements, and read or save weight and FTP when you request it, subject to your permission. Live Activities can show ride information on the Lock Screen and Dynamic Island.</p>
-      <p>Optional iPhone-to-iPhone workout sync uses Bonjour on local Wi-Fi and authenticated TLS with a pairing secret. Camera access scans the pairing code; a code can also be entered manually. A paired receiver gets the completed workout and may save it to its own Apple Health store. Local sync is not an Internet relay. Permissions can be managed in iOS Settings and Apple Health.</p>
-      <h2>Optional services and sharing</h2>
-      <p>If you connect Intervals.icu or Strava, PixelWatts communicates directly with that provider for account authorization, workout access or import, and ride uploads or status reconciliation. Shared activity information can include timestamps, duration, power, heart rate, cadence, distance, and workout metadata. Previously requested transfers may retry while the original account is authorized. Those providers apply their own privacy policies. Disconnecting does not delete activities already sent.</p>
-      <p>You can share FIT files or diagnostic reports through the system Share Sheet. Diagnostic reports contain technical Bluetooth and app events, device model or firmware information, timestamps, uptime, and anonymous correlation identifiers. They are filtered to remove known sensitive identifiers and credentials; review the report before choosing a recipient. Reports are not uploaded automatically.</p>
-      <h2>Analytics and third-party software</h2>
-      <p>The inspected implementation includes no advertising, tracking, third-party analytics, or remote crash-reporting SDK. GRDB is used for local SQLite storage. Apple frameworks provide system services. TestFlight feedback, crash information, and any Apple diagnostics are handled under Apple's applicable settings and policies.</p>
-      <h2>Retention and deletion</h2>
-      <p>Recorded rides remain locally until you delete them. History offers local deletion or local deletion plus removal of PixelWatts-owned Apple Health data. Health deletion can remain pending when access is unavailable. A minimal identity record may remain until deletion is reconciled or cancelled. Deletion does not remove Strava or Intervals.icu activities, workouts on a paired iPhone, previously shared files, or historical backups; manage those copies at their destinations.</p>
-      <p>Diagnostic history is normally limited to 14 days and 12 recent ride sessions, with additional size and event limits. Settings lets you clear diagnostic history. Storage errors can delay cleanup. Local deletion is not a guarantee of forensic erasure or removal from backups. Removing the app may leave Keychain credentials; disconnect services and unpair devices first if you want those credentials removed.</p>
-      <h2>This website and contact</h2>
-      <p>This site stores only your selected language and appearance in browser session storage. It uses no analytics scripts, advertising cookies, remote fonts, or contact form. This website is hosted on GitHub Pages. GitHub receives web requests and logs visitor IP addresses for security purposes under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>. Its policy governs retention of those logs; PixelWatts does not promise a separate retention period.</p>
-      <p>For support and privacy questions, contact <a href="mailto:pixelwatts@baniares.com">pixelwatts@baniares.com</a>. If you send email or diagnostic files, those contents also reach the mail and support providers. Support communications are used to respond to your request and investigate reported problems.</p>
+
+      <p>PixelWatts saves your rides and preferences on your iPhone. No PixelWatts account is required. The app does not include advertising or third-party analytics.</p>
+      <h2>Your rides and preferences</h2>
+      <p>PixelWatts stores your workout plans, ride history, settings, and cycling measurements such as power, heart rate, cadence, distance, and duration. You may also provide weight and FTP to personalize your training. Completed rides can be included in normal iPhone backups, managed by Apple according to your device and account settings.</p>
+      <h2>Apple Health and Apple Watch</h2>
+      <p>With your permission, PixelWatts reads indoor cycling workouts and saves completed rides and their measurements to Apple Health. You can also choose to read or save weight and FTP. Optional Apple Watch support provides heart rate and ride cues. You control Health permissions in Apple's settings. Live Activities can display ride information on your Lock Screen.</p>
+      <h2>Optional connections and sharing</h2>
+      <p>If you connect Strava or Intervals.icu, PixelWatts exchanges account and training information with that service to import workouts or send rides you choose. Requested transfers may retry while the original account remains connected. These services receive the data you send and normal connection information, such as your IP address, under their own privacy practices.</p>
+      <p>You can pair two iPhones to transfer completed workouts between them. The receiving phone may save those workouts to its own Apple Health store with permission. Bluetooth connects your cycling equipment and supports paired-phone transfers. Camera permission is optional for scanning a pairing code; you can enter the code manually.</p>
+      <p>You choose when to share ride files or diagnostic reports. Recipients and the apps or services you use to share them may retain their own copies.</p>
+      <h2>Diagnostics, beta testing, and support</h2>
+      <p>PixelWatts keeps recent technical diagnostics on your device to help investigate problems. Reports may include device information, connection events, errors, and timing details. Review a report before sharing it. Diagnostic reports are not uploaded automatically.</p>
+      <p>Apple operates TestFlight and may provide the developer with testing information, crash reports, and feedback under Apple's terms. Screenshots or attachments you choose to send may contain information from your screen or rides. Support communications are used to respond to your request and investigate reported problems.</p>
+      <h2>Retention and your choices</h2>
+      <p>Your rides remain on your device until you delete them. You can delete a ride locally or also request removal of the copy PixelWatts saved to Apple Health. Health deletion can remain pending when access is unavailable. You can clear diagnostic history in Settings; storage issues may delay cleanup.</p>
+      <p>Local deletion or disconnection does not remove activities from Strava or Intervals.icu, copies on a paired iPhone, exported files, or device backups. A transfer already in progress may still complete. Manage those copies at their destinations. To remove stored connection credentials, disconnect services and unpair devices before removing the app.</p>
+      <h2>This website</h2>
+      <p>This site remembers your language and appearance during your browsing session and uses no advertising or analytics scripts. It is hosted on GitHub Pages, which logs visitor IP addresses for security purposes under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>.</p>
+      <h2>Contact</h2>
+      <p>For privacy questions or support, contact <a href="mailto:pixelwatts@baniares.com">pixelwatts@baniares.com</a>.</p>
+      <h2>Changes</h2>
+      <p>Future versions may change how the app handles data. This policy will identify its latest update date.</p>
     </div>
     <a class="back" href="/?lang=en">← Back to PixelWatts</a>
   </main>
